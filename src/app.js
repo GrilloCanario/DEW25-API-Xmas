@@ -54,6 +54,11 @@ app.get('/reindeers/:id', (req, res) => {
     res.json(reindeers.find(reindeers => reindeers.id == id));
 })
 
+app.delete('/reindeers/:id', (req, res) => {
+    let id = req.params.id;
+    res.status(201);
+})
+
 app.listen(PORT, () => {
     console.log(`La API está escuchando en http://localhost:${PORT}`);
 });
