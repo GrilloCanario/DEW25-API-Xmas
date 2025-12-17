@@ -31,7 +31,7 @@
         }
       }
     },
-    "/reindeers": {
+    "/reindeers/": {
       "get": {
         "description": "",
         "responses": {
